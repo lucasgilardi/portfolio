@@ -1,26 +1,21 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+/*Menu*/
 const navMenu = document.getElementById("nav-menu");
 const navToggle = document.getElementById("nav-toggle");
 const navClose = document.getElementById("nav-close");
 
-
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
 if(navToggle){
     navToggle.addEventListener("click", ()=>{
         navMenu.classList.add("show-menu");
     })
 }
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
 if(navClose){
     navClose.addEventListener("click",()=>{
         navMenu.classList.remove("show-menu");
     })
 }
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*Remove menu mobile*/
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction(){
@@ -29,7 +24,7 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener("click", linkAction));
 
-/*==================== ACCORDION SKILLS ====================*/
+/*Accordion*/
 const skillsContent = document.getElementsByClassName("skills__content");
 const skillsHeader = document.querySelectorAll(".skills__header");
 
@@ -48,7 +43,7 @@ skillsHeader.forEach((el)=>{
     el.addEventListener("click", toggleSkills);
 })
 
-/*==================== QUALIFICATION TABS ====================*/
+/*Qualification tabs*/
 const tabs = document.querySelectorAll("[data-target");
 const tabContents = document.querySelectorAll("[data-content");
 tabs.forEach(tab =>{
@@ -65,7 +60,8 @@ tabs.forEach(tab =>{
         tab.classList.add("qualification__active");
     });
 });
-/*==================== SERVICES MODAL ====================*/
+
+/*Services*/
 const modalViews = document.querySelectorAll(".services__modal");
 const modalBtns = document.querySelectorAll(".services__button");
 const modalCloses = document.querySelectorAll(".services__modal-close");
@@ -86,7 +82,8 @@ modalCloses.forEach((modalClose) =>{
         });
     });
 });
-/*==================== PORTFOLIO SWIPER  ====================*/
+
+/*Portfolio swiper*/
 let swiper = new Swiper(".portfolio__container",{
     cssMode: true,
     loop: true,
@@ -100,7 +97,7 @@ let swiper = new Swiper(".portfolio__container",{
     },
 });
 
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
+/*Scroll sections*/
 const sections = document.querySelectorAll("section[id");
 
 function scrollActive(){
@@ -119,21 +116,21 @@ function scrollActive(){
 }
 window.addEventListener("scroll", scrollActive);
 
-/*==================== CHANGE BACKGROUND HEADER ====================*/ 
+/*Background header*/ 
 function scrollHeader(){
     const nav = document.getElementById("header");
     if(this.scrollY >= 80) nav.classList.add("scroll-header"); else nav.classList.remove("scroll-header");
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*==================== SHOW SCROLL UP ====================*/ 
+/*Scroll up*/ 
 function scrollUp(){
     const scrollUp = document.getElementById("scroll-up");
     if(this.scrollY >= 560) scrollUp.classList.add("show-scroll"); else scrollUp.classList.remove("show-scroll");
 }
 window.addEventListener("scroll", scrollUp);
 
-/*==================== DARK LIGHT THEME ====================*/
+/*Dark / ligth theme*/
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "uil-sun";

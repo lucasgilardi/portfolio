@@ -17,9 +17,8 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <!-- Css -->
-        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <link rel="stylesheet" href="css/styles.css">
-
         <title>Lucas Gilardi | Portfolio</title>
     </head>
     <body>
@@ -30,12 +29,12 @@
                     <ul class="nav__list grid">
                         <li class="nav__item">
                             <a href="#home" class="nav__link active-link">
-                                <i class="uil uil-estate nav__icon"></i> Home
+                                <i class="uil uil-estate nav__icon"></i> Inicio
                             </a>
                         </li>
                         <li class="nav__item">
                             <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
+                                <i class="uil uil-user nav__icon"></i> Sobre mí
                             </a>
                         </li>
                         <li class="nav__item">
@@ -45,7 +44,7 @@
                         </li>
                         <li class="nav__item">
                             <a href="#services" class="nav__link">
-                                <i class="uil uil-briefcase-alt nav__icon"></i> Services
+                                <i class="uil uil-briefcase-alt nav__icon"></i> Servicios
                             </a>
                         </li>
                         <li class="nav__item">
@@ -55,7 +54,7 @@
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contact
+                                <i class="uil uil-message nav__icon"></i> Contacto
                             </a>
                         </li>
                     </ul>
@@ -253,11 +252,11 @@
                     <div class="qualification__tabs">
                         <div class="qualification__button button--flex qualification__active" data-target="#education">
                             <i class="uil uil-graduation-cap qualification__icon"></i>
-                            Education
+                            Educación
                         </div>
                         <div class="qualification__button button--flex" data-target="#work">
                             <i class="uil uil-briefcase-alt qualification__icon"></i>
-                            Work
+                            Trabajo
                         </div>
                     </div>
                     <div class="qualification__sections">
@@ -410,6 +409,42 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Servicio 2 -->
+                    <div class="services__content">
+                        <div>
+                            <i class="uil uil-wordpress-simple services__icon"></i>
+                            <h3 class="services__title">Desarrollo<br>Wordpress</h3>
+                        </div>
+                        <span class="button button--flex button--small button--link services__button">
+                            Ver más
+                            <i class="uil uil-arrow-right button__icon"></i>
+                        </span>
+                        <div class="services__modal">
+                            <div class="services__modal-content">
+                                <h4 class="services__modal-title">Desarrollo Wordpress</h4>
+                                <i class="uil uil-times services__modal-close"></i>
+
+                                <ul class="services__modal-services grid">
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Desarrollo de páginas web con Wordpress.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Tiendas online.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Integración de plugins para funcionalidades requeridas.</p>
+                                    </li>
+                                    <li class="services__modal-service">
+                                        <i class="uil uil-check-circle services__modal-icon"></i>
+                                        <p>Responsive design.</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -420,11 +455,11 @@
                     <div class="swiper-wrapper">
                         <!-- Portfolio 1 -->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="img/portfolio1.jpg" alt="Portfolio proyecto 1" class="portfolio__img">
+                            <img src="img/portfolio1.jpg" alt="Portfolio proyecto 3" class="portfolio__img">
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Polaroid Roca</h3>
-                                <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ea tenetur doloremque repellendus.</p>
-                                <a href="https://lucasgilardi.github.io/PolaroidRoca/" class="button button--flex button--small portfolio__button">
+                                <h3 class="portfolio__title">Arivaci&Co</h3>
+                                <p class="portfolio__description">Tienda online de ropa desarrollada con React.</p>
+                                <a href="https://boring-hermann-3f8dbb.netlify.app/" class="button button--flex button--small portfolio__button" target="_blank">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -435,8 +470,8 @@
                             <img src="img/portfolio2.jpg" alt="Portfolio proyecto 2" class="portfolio__img">
                             <div class="portfolio__data">
                                 <h3 class="portfolio__title">Sándalo Restaurat</h3>
-                                <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ea tenetur doloremque repellendus.</p>
-                                <a href="https://lucasgilardi.github.io/SandaloRestaurant/" class="button button--flex button--small portfolio__button">
+                                <p class="portfolio__description">Página web de restaurante desarrollada con Javascript.</p>
+                                <a href="https://lucasgilardi.github.io/SandaloRestaurant/" class="button button--flex button--small portfolio__button" target="_blank">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -444,11 +479,11 @@
                         </div>
                         <!-- Portfolio 3 -->
                         <div class="portfolio__content grid swiper-slide">
-                            <img src="img/portfolio3.jpg" alt="Portfolio proyecto 3" class="portfolio__img">
+                            <img src="img/portfolio3.jpg" alt="Portfolio proyecto 2" class="portfolio__img">
                             <div class="portfolio__data">
-                                <h3 class="portfolio__title">Arivaci&Co</h3>
-                                <p class="portfolio__description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem ea tenetur doloremque repellendus.</p>
-                                <a href="https://boring-hermann-3f8dbb.netlify.app/" class="button button--flex button--small portfolio__button">
+                                <h3 class="portfolio__title">Rolex Shop</h3>
+                                <p class="portfolio__description">Tienda online de relojes desarrollada con Javascript.</p>
+                                <a href="https://lucasgilardi.github.io/SandaloRestaurant/" class="button button--flex button--small portfolio__button" target="_blank">
                                     Demo
                                     <i class="uil uil-arrow-right button__icon"></i>
                                 </a>
@@ -463,6 +498,11 @@
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
+                
+                <a href="https://github.com/lucasgilardi" class="button button--flex button--small portfolio__button more__button" target="_blank">
+                    Más proyectos en mi perfil de GitHub
+                    <i class="uil uil-arrow-right button__icon"></i>
+                </a>
             </section>
 
             <section class="contact section" id="contact">
@@ -551,7 +591,7 @@
             <i class="uil uil-arrow-up scrollup__icon"></i>
         </a>
 
-    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     </body>
 </html>

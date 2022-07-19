@@ -3,7 +3,6 @@
 /*Variables*/
 :root {
     --header-height: 3rem;
-    /*Colors*/
     --hue-color: 228;
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
@@ -18,7 +17,6 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
 
-    /*Font*/
     --body-font: 'Poppins', sans-serif;
     --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
@@ -27,11 +25,9 @@
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
     --smaller-font-size: .75rem;
-    /*Font weight*/
     --font-medium: 500;
     --font-semi-bold: 600;
 
-    /*Margin bottom*/
     --mb-0-25: .25rem;
     --mb-0-5: .5rem;
     --mb-0-75: .75rem;
@@ -41,7 +37,6 @@
     --mb-2-5: 2.5rem;
     --mb-3: 3rem;
 
-    /*Z index*/
     --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000;
@@ -596,6 +591,13 @@ img {
 .portfolio__button:hover .button__icon{
   transform: translateX(.25rem);
 }
+.more__button{
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 70%;
+  margin-top: 5rem;
+}
 .swiper-button-prev::after,
 .swiper-button-next::after{
   content: "";
@@ -764,6 +766,9 @@ img {
   .services__modal{
     padding: 0 .5rem;
   }
+  .more__button{
+    width: 70%;
+  }
 }
 
 @media screen and (min-width: 568px){
@@ -788,6 +793,9 @@ img {
     display: grid;
     grid-template-columns: .6fr;
     justify-content: center;
+  }
+  .more__button{
+    width: 70%;
   }
 }
 
@@ -891,6 +899,9 @@ img {
   }
   .portfolio__content{
     align-items: center;
+  }
+  .more__button{
+    width: 40%;
   }
   .footer__container{
     grid-template-columns: repeat(3, 1fr);
