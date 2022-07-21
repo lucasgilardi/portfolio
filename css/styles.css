@@ -784,10 +784,12 @@ img {
   }
   .about__container, 
   .skills__container, 
-  .portfolio__content, 
-  .contact__container,
+  .portfolio__content,
   .footer__container{
     grid-template-columns: repeat(2, 1fr);
+  }
+  .contact__container{
+    grid-template-columns: repeat(3, 1fr);
   }
   .qualification__sections{
     display: grid;
