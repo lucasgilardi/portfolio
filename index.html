@@ -107,7 +107,7 @@
                         <div class="home__data">
                             <h1 class="home__title">¡Hola! Soy Lucas.</h1>
                             <h3 class="home__subtitle">Diseñador y Desarrollador Web</h3>
-                            <p class="home__description">Mi nombre es Lucas Gilardi y soy Diseñador y Desarrollador Web. Tengo 25
+                            <p class="home__description">Mi nombre es Lucas Gilardi y soy Diseñador y Desarrollador Web. Tengo 26
                                 años y vivo en la Ciudad de Buenos Aires.</p>
                             <a href="#contact" class="button button--flex">
                                 Contact Me<i class="uil uil-message button__icon"></i>
@@ -577,28 +577,28 @@
                             </div>
                         </div>
                     </div>
-                    <form action="https://formsubmit.co/lcsgilardi@gmail.com" method="POST" class="contact__form grid">
+                    <form action="" method="POST" class="contact__form grid" id="form">
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Nombre</label>
-                                <input type="text" name="nombre" class="contact__input">
+                                <input type="text" name="nombre" class="contact__input" id="nombre" required>
+                                <span class="error"></span>
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" name="email" class="contact__input">
+                                <input type="email" name="email" class="contact__input" id="email" required>
+                                <span class="error"></span>
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Mensaje</label>
-                                <textarea name="mensaje" class="contact__input"></textarea>
+                                <textarea name="mensaje" class="contact__input" id="mensaje" required></textarea>
+                                <span class="error"></span>
                             </div>
-                            <input type="hidden" name="_template" value="table">
-                            <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_subject" value="Nuevo mensaje desde web de Portfolio">
-                            <input type="hidden" name="_next" value="https://lucasgilardi.github.io/portfolio/thankyou.html">
                             <div class="button button--flex button-form">
                                 <input type="submit" value="Enviar">
                                 <i class="uil uil-message button__icon"></i>
                             </div>
+                            <div id="response"></div>
                         </div>
                     </form>
                 </div>
