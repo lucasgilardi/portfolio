@@ -400,8 +400,8 @@ img {
 .skills__js{
   width: 60%;
 }
-.skills__react{
-  width: 40%;
+.skills__wp{
+  width: 90%;
 }
 .skills__ps{
   width: 90%;
@@ -547,6 +547,11 @@ img {
 .services__modal-service{
   display: flex;
 }
+.services__modal-service-desc{
+  list-style: circle;
+  margin-left: 30px; 
+  font-size: 14px;
+}
 .services__modal-title{
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
@@ -563,6 +568,19 @@ img {
 .services__modal-icon{
   color: var(--first-color);
   margin-right: var(--mb-0-25);
+}
+.services__modal .skills__header{
+  margin-bottom: var(--mb-0-5);
+}
+.services__modal .skills__titles{
+  margin-bottom: 0;
+}
+.services__modal .skills__open .skills__list{
+  padding-left: 0;
+  margin-bottom: var(--mb-0-5);
+}
+.services__modal .skills__open .skills__list ul li{
+  padding: 5px 0;
 }
 .active-modal{
   opacity: 1;
