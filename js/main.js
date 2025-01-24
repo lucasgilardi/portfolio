@@ -43,6 +43,7 @@ skillsHeader.forEach((el)=>{
     el.addEventListener("click", toggleSkills);
 })
 
+<<<<<<< HEAD
 /* Qualification tabs */
 const tabs = document.querySelectorAll("[data-target]");
 const tabContents = document.querySelectorAll("[data-content]");
@@ -60,6 +61,22 @@ tabs.forEach(tab => {
             tab.classList.remove("qualification__active");
         });
 
+=======
+/*Qualification tabs*/
+const tabs = document.querySelectorAll("[data-target");
+const tabContents = document.querySelectorAll("[data-content");
+tabs.forEach(tab =>{
+    tab.addEventListener("click", ()=>{
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContents.forEach(tabContent =>{
+            tabContent.classList.remove("qualification__active");
+        });
+        target.classList.add("qualification__active");
+        tab.forEach(tab =>{
+            tab.classList.remove("qualification__active");
+        });
+>>>>>>> e92d51df8c61f6926fe199a6bfbc88c6b965c04b
         tab.classList.add("qualification__active");
     });
 });
